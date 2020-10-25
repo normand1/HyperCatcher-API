@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "6724a5f6-7d14-4e2f-9213-2a981561748d",
+		"name": "HyperCatcher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Chapters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://studio.hypercatcher.com/chapters/podcast/https:feeds.buzzsprout.com1027057.rss/episode/Buzzsprout-3433267",
+					"protocol": "https",
+					"host": [
+						"studio",
+						"hypercatcher",
+						"com"
+					],
+					"path": [
+						"chapters",
+						"podcast",
+						"https:feeds.buzzsprout.com1027057.rss",
+						"episode",
+						"Buzzsprout-3433267"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Chapters",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startTime\": 100,\n    \"title\": \"Test Title\",\n    \"img\": \"http://example.com/podcast/episode/chapter_art2.jpg\",\n    \"url\": \"http://example.com/link/to/funding_platform\"\n}"
+				},
+				"url": {
+					"raw": "https://studio.hypercatcher.com/chapters/podcast/https:feeds.buzzsprout.com1027057.rss/episode/Buzzsprout-3433267",
+					"protocol": "https",
+					"host": [
+						"studio",
+						"hypercatcher",
+						"com"
+					],
+					"path": [
+						"chapters",
+						"podcast",
+						"https:feeds.buzzsprout.com1027057.rss",
+						"episode",
+						"Buzzsprout-3433267"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
