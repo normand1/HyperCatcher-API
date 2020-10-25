@@ -31,11 +31,11 @@ You can retrieve podcast chapters that have been approved by podcasts hosts from
 `https://studio.hypercatcher.com/chapters/podcast/<Clean Podcast RSS>/episode/<Episode GUID>`
 
 ## Definitions
-<Clean Podcast RSS> = podcast RSS feed with '/' characters removed
+`<Clean Podcast RSS>` = podcast RSS feed with '/' characters removed
 example: 
 `https://feeds.buzzsprout.com/1027057.rss -> https:feeds.buzzsprout.com1027057.rss`
   
-<Episode GUID> = RSS GUID
+`<Episode GUID>` = RSS GUID
 example:
 <guid isPermaLink="false">Buzzsprout-3433267</guid>
 
