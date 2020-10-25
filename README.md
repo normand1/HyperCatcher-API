@@ -39,5 +39,7 @@ example:
 example:
 <guid isPermaLink="false">Buzzsprout-3433267</guid>
 
-
+## Postman
+Check out the included Postman Collection for a live example of the API
+https://github.com/normand1/HyperCatcher-API/blob/main/HyperCatcher.postman_collection.json
 
