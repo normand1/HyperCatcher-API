@@ -18,10 +18,24 @@ https://studio.hypercatcher.com/
 
 HyperCatcher Studio is a single location for collecting podcast chapter content via the API.
 
+### PUT Podcast Community Chapter Content
+
+You can update podcast community chapter content for any podcast episode via a simple API:
+
+`https://studio.hypercatcher.com/communityChapters/podcast/<Clean Podcast RSS>/episode/<Episode GUID>`
+
+### GET Podcast Community Chapter Content
+
+You can retrieve podcast chapters that have been approved by podcasts hosts from this simple API:
+
+`https://studio.hypercatcher.com/communityChapters/podcast/<Clean Podcast RSS>/episode/<Episode GUID>`
+
 ### PUT Podcast Chapter Content
 
 You can update podcast chapter content for any podcast episode via a simple API:
+This API requires authentication, request access via DM here: https://twitter.com/1DavidNorman
 
+header: `'hyper-catcher-secret': <secret key>`
 `https://studio.hypercatcher.com/chapters/podcast/<Clean Podcast RSS>/episode/<Episode GUID>`
 
 ### GET Podcast Chapter Content
