@@ -11,8 +11,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://studio.hypercatcher.com/chapters/podcast/https:feeds.buzzsprout.com1027057.rss/episode/Buzzsprout-3433267",
-					"protocol": "https",
+					"raw": "http://studio.hypercatcher.com/chapters/podcast/https:feeds.buzzsprout.com1027057.rss/episode/Buzzsprout-3433267",
+					"protocol": "http",
 					"host": [
 						"studio",
 						"hypercatcher",
@@ -30,17 +30,47 @@
 			"response": []
 		},
 		{
+			"name": "GET Community Chapters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://studio.hypercatcher.com/communityChapters/podcast/https:feeds.buzzsprout.com1027057.rss/episode/Buzzsprout-3433267",
+					"protocol": "http",
+					"host": [
+						"studio",
+						"hypercatcher",
+						"com"
+					],
+					"path": [
+						"communityChapters",
+						"podcast",
+						"https:feeds.buzzsprout.com1027057.rss",
+						"episode",
+						"Buzzsprout-3433267"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "PUT Chapters",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "hyper-catcher-secret",
+						"value": "<secret key>",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"startTime\": 100,\n    \"title\": \"Test Title\",\n    \"img\": \"http://example.com/podcast/episode/chapter_art2.jpg\",\n    \"url\": \"http://example.com/link/to/funding_platform\"\n}"
+					"raw": "{\n    \"startTime\": 100,\n    \"title\": \"Test Title 2\",\n    \"img\": \"http://example.com/podcast/episode/chapter_art2.jpg\",\n    \"url\": \"http://example.com/link/to/funding_platform\"\n}"
 				},
 				"url": {
-					"raw": "https://studio.hypercatcher.com/chapters/podcast/https:feeds.buzzsprout.com1027057.rss/episode/Buzzsprout-3433267",
-					"protocol": "https",
+					"raw": "http://studio.hypercatcher.com/chapters/podcast/https:feeds.buzzsprout.com1027057.rss/episode/Buzzsprout-3433267",
+					"protocol": "http",
 					"host": [
 						"studio",
 						"hypercatcher",
@@ -48,6 +78,40 @@
 					],
 					"path": [
 						"chapters",
+						"podcast",
+						"https:feeds.buzzsprout.com1027057.rss",
+						"episode",
+						"Buzzsprout-3433267"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Community Chapters",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "hyper-catcher-secret",
+						"type": "text",
+						"value": "<secret key>"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startTime\": 100,\n    \"title\": \"Test Title 2\",\n    \"img\": \"http://example.com/podcast/episode/chapter_art2.jpg\",\n    \"url\": \"http://example.com/link/to/funding_platform\"\n}"
+				},
+				"url": {
+					"raw": "http://studio.hypercatcher.com/communityChapters/podcast/https:feeds.buzzsprout.com1027057.rss/episode/Buzzsprout-3433267",
+					"protocol": "http",
+					"host": [
+						"studio",
+						"hypercatcher",
+						"com"
+					],
+					"path": [
+						"communityChapters",
 						"podcast",
 						"https:feeds.buzzsprout.com1027057.rss",
 						"episode",
